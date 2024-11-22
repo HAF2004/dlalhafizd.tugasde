@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Ujian Online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Ujian Online - Seputar IT</h1>
+        <p>Silakan isi semua jawaban dengan benar sebelum mengumpulkan.</p>
+        <form id="quizForm">
+            <!-- Pilihan Ganda -->
+            <div class="section">
+                <h2>Pilihan Ganda</h2>
+                <div class="question">
+                    <p>1. Apa kepanjangan dari HTTP?</p>
+                    <label><input type="radio" name="q1" value="Hypertext Transfer Protocol"> Hypertext Transfer Protocol</label><br>
+                    <label><input type="radio" name="q1" value="Hypertext Transfer Portal"> Hypertext Transfer Portal</label><br>
+                    <label><input type="radio" name="q1" value="Hypertext Transformation Protocol"> Hypertext Transformation Protocol</label><br>
+                    <label><input type="radio" name="q1" value="Hyper Tool Transfer Protocol"> Hyper Tool Transfer Protocol</label>
+                </div>
+                <div class="question">
+                    <p>2. Apa fungsi utama dari CPU pada komputer?</p>
+                    <label><input type="radio" name="q2" value="Memproses data"> Memproses data</label><br>
+                    <label><input type="radio" name="q2" value="Menyimpan data"> Menyimpan data</label><br>
+                    <label><input type="radio" name="q2" value="Menampilkan data"> Menampilkan data</label><br>
+                    <label><input type="radio" name="q2" value="Mengelola jaringan"> Mengelola jaringan</label>
+                </div>
+                <div class="question">
+                    <p>3. Apa nama sistem operasi yang dikembangkan oleh Microsoft?</p>
+                    <label><input type="radio" name="q3" value="Windows"> Windows</label><br>
+                    <label><input type="radio" name="q3" value="Linux"> Linux</label><br>
+                    <label><input type="radio" name="q3" value="MacOS"> MacOS</label><br>
+                    <label><input type="radio" name="q3" value="Android"> Android</label>
+                </div>
+            </div>
+
+            <!-- Essay -->
+            <div class="section">
+                <h2>Essay</h2>
+                <div class="question">
+                    <p>1. Jelaskan fungsi jaringan komputer dalam kehidupan sehari-hari!</p>
+                    <textarea name="essay1" rows="5" placeholder="Tulis jawaban Anda di sini..."></textarea>
+                </div>
+                <div class="question">
+                    <p>2. Sebutkan beberapa keuntungan menggunakan cloud computing!</p>
+                    <textarea name="essay2" rows="5" placeholder="Tulis jawaban Anda di sini..."></textarea>
+                </div>
+            </div>
+
+            <button type="submit">Kumpulkan Jawaban</button>
+        </form>
+        <div id="result" class="hidden"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
