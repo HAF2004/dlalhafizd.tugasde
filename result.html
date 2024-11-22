@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Hasil Ujian</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Hasil Ujian Anda</h1>
+        <div id="resultContent"></div>
+    </div>
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const score = params.get('score');
+        const totalQuestions = params.get('totalQuestions');
+        const essay1 = params.get('essay1');
+        const essay2 = params.get('essay2');
+
+        const resultContent = `
+            <p><strong>Skor Pilihan Ganda:</strong> ${score}/${totalQuestions}</p>
+            <h2>Jawaban Essay</h2>
+            <p><strong>1. Fungsi jaringan komputer:</strong> ${essay1 || "Tidak dijawab"}</p>
+            <p><strong>2. Keuntungan cloud computing:</strong> ${essay2 || "Tidak dijawab"}</p>
+        `;
+        document.getElementById('resultContent').innerHTML = resultContent;
+    </script>
+</body>
+</html>
