@@ -9,7 +9,7 @@ document.getElementById('quizForm').addEventListener('submit', function(event) {
         q1: "Hypertext Transfer Protocol",
         q2: "Memproses data",
         q3: "Windows",
-        q4: "RAM",
+        q4: "Menyimpan data sementara untuk mempercepat pemrosesan",
         q5: "HyperText Markup Language"
     };
 
